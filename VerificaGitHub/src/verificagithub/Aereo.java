@@ -6,6 +6,8 @@ public class Aereo extends Aeroporto{
     int nPosti;
     String marca;
     String modello;
+    Aereo[] aeroplano;
+    
     
     public Aereo(){}
     
@@ -18,6 +20,8 @@ public class Aereo extends Aeroporto{
         this.marca = marca;
         
         this.codice = codice;
+        
+        this.aeroplano = new Aereo[super.getN_aerei()];
       
     }
 
