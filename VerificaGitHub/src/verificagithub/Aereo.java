@@ -1,6 +1,6 @@
 package verificagithub;
 
-public class Aereo {
+public class Aereo extends Aeroporto{
     
     String codice;
     int nPosti;
@@ -54,4 +54,9 @@ public class Aereo {
     }
     
     
+    @Override
+    public String toString(){
+        
+        return "L'aeroporto di " + super.getCittà() + " ha una superficie di " + super.getSuperficie() + ". ";
+    }
 }
