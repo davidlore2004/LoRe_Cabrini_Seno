@@ -57,6 +57,6 @@ public class Aereo extends Aeroporto{
     @Override
     public String toString(){
         
-        return "L'aeroporto di " + super.getCittà() + " ha una superficie di " + super.getSuperficie() + ". ";
+        return "L'aeroporto di " + super.getCittà() + " ha una superficie di " + super.getSuperficie() + ". Gli aerei che sono disponibili sono " + super.getAerei() + ". ";       
     }
 }
