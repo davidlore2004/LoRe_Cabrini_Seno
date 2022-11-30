@@ -1,7 +1,7 @@
 
 package verificagithub;
 
-public class Pilota {
+public class Pilota extends Aeroporto{
     private int nPatente;
     private String nome;
     private String cognome;
@@ -44,6 +44,12 @@ public class Pilota {
 
     public void setRuolo(String ruolo) {
         this.ruolo = ruolo;
+    }
+    
+    @Override
+    public String toString()
+    {
+        return "L'aeroporto di " + super.getCittà() + " ha una superficie di " + super.getSuperficie() + ". Gli aerei che sono disponibili sono: " + super.getAerei() + ".";
     }
     
 }
